@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.nav ul li {
+    display: inline-flex;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 2vw;
+    padding: 2vw;
+
+
+
+
+}
+
+.nav a {
+    text-decoration: none;
+    text-size-adjust: none;
+
+}
+
+
+.nav {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+
+}
+
+.nav h1 {
+    font-size: 3.5vw;
+    font-family: 'Times New Roman';
+    margin: 3vw;
+}
+
+.loginbox h2 {
+    text-align: center;
+    font-size: 3vw;
+}
+
+.loginbox {
+    border: 2px solid blue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30vw;
+    background: white;
+    border-radius: 10px;
+    text-align: start;
+    justify-content: space-between;
+
+
+}
+
+
+.input-box {
+    position: relative;
+    width: 310px;
+    padding: 3px;
+
+    margin-bottom: 1px solid black;
+}
+
+.form {
+    border: 3px solid blue;
+
+
+    border-radius: 28px;
+    text-align: center;
+
+
+    padding: 5vw;
+
+
+
+
+}
+
+
+.nav ul li .button {
+    width: 160px;
+    height: 40px;
+    background-color: orangered;
+    border-radius: 28px;
+    border: none;
+
+
+}
+
+.nav .button a {
+    color: white;
+    font-family: Verdana;
+    text-decoration: none;
+    font-size: 1vw;
+}
+
+.image {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food service</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <style>
+        .background {
+            position: relative;
+            height: 100vh;
+            background-image: url(images/pizza.png );
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        @media (max-width: 1000px) {
+            .background {
+                background-size: contain;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background">
+        <div class="nav">
+            <h1> Food Service</h1>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><button class="button" id="light" onclick="toggleFunction()"><a href="#">Day/night</a></button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+
+
+
+
+
+<script>
+    let isFunction1 = true;
+
+    function function1() {
+        alert("body.style.backgroundColor = '#333';");
+    }
+
+    function function2() {
+        alert("body.style.backgroundColor = '#fff'");
+    }
+
+    function toggleFunction() {
+        if (isFunction1) {
+            body.style.backgroundColor = '#333';
+        } else {
+            body.style.backgroundColor = '#fff';
+        }
+
+        isFunction1 = !isFunction1;
+    }
+
+    const light = document.getElementById('light');
+    const body = document.body;
+
+    light.addEventListener('change', () => {
+        if (light.button) {
+            // Dark mode
+            body.style.backgroundColor = '#333';
+            body.style.color = 'red';
+
+        } else {
+            // Light mode
+            body.style.backgroundColor = '#fff';
+
+        }
+    });
+
+</script>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register here</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="nav">
+        <h1> Register Here</h1>
+
+
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><button class="button" id="light" onclick="toggleFunction()"><a href="#">Day/night</a></button>
+            </li>
+        </ul>
+    </div>
+    <div class="image">
+        <img src="images/burger.png" style="max-width:100%;height:auto;">
+
+        <div class="form">
+
+            <form>
+                <lable>First Name:</lable><br>
+                <input type="fname" required id="fname" placeholder="please enter your first name"><br><br>
+                <lable>Last Name:</lable><br>
+                <input type="lname" required id="lname" placeholder="please enter your last name"><br><br>
+                <lable>Phone No:</lable><br>
+                <input type="number" required id="phone" inputmode="number"
+                    placeholder="please enter your phonr number"><br><br>
+                <lable>Address:</lable><br>
+                <input type="address" required id="address" placeholder="please enter your address"><br><br>
+                <lable>Email:</lable><br>
+                <input type="email" required id="email" placeholder="please enter your email address"><br><br>
+                <lable>Payment method:</lable><br>
+                <select id="payment" name="payment">
+                    <option value="volvo">Cash</option>
+                    <option value="saab">Fonepay</option>
+                    <option value="fiat">Credit cards</option>
+                    <option value="audi">Debit cards</option>
+                </select><br><br>
+                <lable>Food you want to order:</lable><br>
+                <input type="checkbox" id="momo" name="momo" value="food">
+                <label for="momo"> Momo</label>
+                <input type="checkbox" id="chow mein" name="momo" value="food">
+                <label for="chowmein"> chow mein</label>
+                <input type="checkbox" id="burger" name="momo" value="food">
+                <label for="burger"> Burger</label>
+                <input type="checkbox" id="pizza" name="momo" value="food">
+                <label for="pizza"> Pizza</label>
+                <input type="checkbox" id="biryani" name="biryani" value="food">
+                <label for="biryani"> Biryani</label><br><br>
+
+                <button type="submit" Login>create your account</S></button>
+
+            </form>
+
+        </div>
+    </div>
+
+
+    </div>
+
+    <script>
+        let isFunction1 = true;
+
+        function function1() {
+            alert("body.style.backgroundColor = '#333';");
+        }
+
+        function function2() {
+            alert("body.style.backgroundColor = '#fff'");
+        }
+
+        function toggleFunction() {
+            if (isFunction1) {
+                body.style.backgroundColor = '#333';
+            } else {
+                body.style.backgroundColor = '#fff';
+            }
+
+            isFunction1 = !isFunction1;
+        }
+
+        const light = document.getElementById('light');
+        const body = document.body;
+
+        light.addEventListener('change', () => {
+            if (light.button) {
+                // Dark mode
+                body.style.backgroundColor = '#333';
+                body.style.color = 'red';
+
+            } else {
+                // Light mode
+                body.style.backgroundColor = '#fff';
+
+            }
+        });
+
+    </script>
+</body>
+
+</html>
